@@ -1,0 +1,185 @@
+*{
+  /* border:2px green dashed; */
+  margin:0px;
+  padding:0px; 
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Montserrat', sans-serif;
+    min-width:100%;
+}
+
+/* what contains everything on the page */
+.container{
+  /* margin-right:3em; */
+  min-width:100%;
+  /* width:100%; */
+  height:100vh;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+        "icon"
+        "nav"
+        "content"
+        "footer";
+}
+
+/* step one: name your sections */
+/* the sections of my about me page */
+.icon,
+ nav,
+ .content,
+ footer{
+   padding-left: 3em;
+   padding-right: 3em;
+   text-align: center;
+}
+
+.icon svg {
+  width:40%;
+}
+
+/* navigation bar styling */
+
+nav{
+  margin-left:2em;
+  grid-area:nav;
+  justify-content: center;
+  text-align:center;
+  padding-left:4em;
+  padding-right: 4em;
+}
+nav ul {
+  margin:0;
+  padding:0;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+nav li{
+  padding: 1em 0;
+  list-style-type: none;
+  padding: 25px;
+  font-size: 1.7em;
+}
+
+nav li a {
+  color: black;
+  font-weight: 400;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav li a:hover {
+  color:white;
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+/* a:link {
+    text-decoration: none;
+  } */
+  
+a:visited {
+    text-decoration: none;
+  }
+
+/* content section */
+.content{
+  grid-area:content;
+  max-width:600px;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+.content img{
+  width: 60%;
+  border-radius: 8%;
+  margin-bottom: 4em;
+}
+
+.content p{
+  text-align: left;
+  font-size:1em;
+  line-height: 1.5rem;
+}
+.paragraph2{
+  text-indent: 2em;
+}
+/* the span tag that wrap starts off my paragraph */
+.bigText {
+  font-size:2em;
+  padding-right:.5em;
+}
+footer{
+  grid-area:footer;
+}
+footer p{
+  font-size:2em;
+}
+
+footer li {
+  display:inline;
+}
+
+footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  padding:0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+footer ul li{
+  list-style: none;
+  align-self:flex-end;
+}
+footer ul li a {
+  text-decoration:none;
+  color: black;
+  opacity:.6;
+  transition: .3s;
+}
+footer ul li a:hover {
+  text-decoration:none;
+  color:white;
+}
+
+footer svg {
+  width:20%;
+}
+
+footer p{
+  font-size: 1em;
+}
+/* grid system for desktop */
+@media (min-width:1040px){
+  .container{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+          "icon content"
+          "nav content"
+          "nav content"
+          "footer footer";
+  }
+    nav ul{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .icon svg {
+      width: 130%;
+      padding-left:20px;
+    }
+
+  
+
+}
