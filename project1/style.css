@@ -72,7 +72,14 @@ box-sizing: border-box;
   height: 50px;
 }
 
+h2 {
+  margin-bottom: 40px;
+}
 
+.desc {
+  padding-left: 100px;
+  padding-top: -500px;
+}
 
 
   /* MEDIA QUERY FOR SMALL SCREENS */
