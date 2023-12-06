@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="parallax.css"> -->
+    <link rel="stylesheet" href="interaction.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../slider.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    </head>
+   
+    <body>
+      <!-- navbar -->
+      <nav>
+        <ul>
+            <li><a href="../../index.html">portfolio</a></li>
+            <li><a href="../../index.html#paragraph">about</a></li>
+           <li><a href="../../index.html#contact">contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img class="slideshow-img" id="self-help" src="neg layout.jpg" >
+            </div>
+            
+            <div class="mySlides fade">
+              <img class="slideshow-img" src="pos layout real.jpg" >
+            </div>
+
+            
+           
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        
+        <script src="" async defer></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+     
+     
+    </body>
+</html>
