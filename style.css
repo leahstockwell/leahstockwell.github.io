@@ -104,6 +104,15 @@ nav{
   margin-bottom: -30px;
 }
 
+.mixed-title {
+  font-size: 16pt;
+  color: #4e4e4e;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -50px;
+  margin-bottom: -30px;
+}
+
 
 .image-gallery {
   display: grid;
