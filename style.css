@@ -181,11 +181,12 @@ nav{
 
 .about-me p{
   text-align: left;
+  text-indent: -36px;
   width: 50%;
   font-size:12pt;
   line-height: 1.5rem;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 70px;
 }
 
 .about-me a{
