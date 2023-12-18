@@ -109,7 +109,16 @@ nav{
   color: #4e4e4e;
   position: relative;
   margin-left: 50px;
-  margin-top: -50px;
+  margin-top: -260px;
+  margin-bottom: -30px;
+}
+
+.photography-title {
+  font-size: 16pt;
+  color: #4e4e4e;
+  position: relative;
+  margin-left: 50px;
+  margin-top: -280px;
   margin-bottom: -30px;
 }
 
@@ -182,6 +191,7 @@ nav{
   align-items: flex-start;
   padding: 50px 50px 100px 50px;
   margin: 0 auto;
+  margin-top: -310pt;
 
     /* column-count: 2; */
 }
