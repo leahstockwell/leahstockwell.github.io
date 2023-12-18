@@ -1,11 +1,17 @@
 * {box-sizing: border-box}
 body {font-family: Chainprinter, sans-serif; margin:0}
 .mySlides {display: none}
+
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .slideshow-container {
+    margin-top: 50px;
   }
+
 
 /* Slideshow container */
 /* .slideshow-container {
