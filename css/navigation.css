@@ -1,0 +1,99 @@
+nav {
+    background-color: white;
+    overflow: hidden;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text horizontally */
+    line-height: 30px; /* Vertically center items */
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    font-weight: 600;
+    color: #4e4e4e;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 30px; /* Increase the font size of the links */
+    opacity: 0.8; /* Adjust opacity of the text links */
+    transition: color 0.4s ease; /* Smooth hover transition */
+}
+
+nav ul li a:hover {
+    color: #222222;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px 20px;
+    float: right;
+}
+
+nav ul.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 80px;
+    padding-right: 20px;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 768px), (max-height: 500px) {
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.menu.show {
+        display: flex;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        float: none;
+        margin-bottom: 10px; /* Adjust spacing between items */
+    }
+
+    .nav-logo {
+        width: 60px; /* Adjust logo size for mobile */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Further reduce font size for smaller screens */
+        padding: 10px 15px; /* Adjust padding for smaller touch targets */
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Template</title>
+    <link rel="stylesheet" href="/css/artwork.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hst3oqs.css">
+    <link rel="icon" type="image/svg+xml" href="/Site-Elements/favicon.svg">
+    <script src="/js/loadFooter.js" defer></script>
+    <script src="/js/loadNavbar.js" defer></script>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class="buffer"></div>
+
+    <main>
+        <div class="artwork">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="20210428_141250.jpeg" alt="Artwork 1">
+                    <img src="20210428_141257.jpeg" alt="Artwork 1">
+                    <img src="20210428_141307.jpeg" alt="Artwork 1">
+                    <!-- Add more images as needed -->
+                </div>
+                <div class="carousel-button prev" onclick="prevImage()">&#8249;</div>
+                <div class="carousel-button next" onclick="nextImage()">&#8250;</div>
+            </div>
+
+            <div class="description">
+                <h2>Artwork Title</h2>
+                <p>Description of the artwork goes here.</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/artwork.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+</html>

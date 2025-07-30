@@ -1,0 +1,81 @@
+/* Artwork Template Styles */
+.artwork {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-height: 70vh; /* Set the image height to 90% of the viewport height */
+    width: auto;  /* Adjust the width automatically to maintain aspect ratio */
+}
+
+.buffer {
+    height: 10vh; /* Set the height to 10% of the viewport height */
+    background-color: white; /* Set the background color to white */
+    width: 100%; /* Make the section full width */
+}
+
+.artwork img {
+    max-width: calc(100% - 40px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Adjust timing as needed */
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+
+.carousel img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 240px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 786px) {
+    .carousel-button {
+        font-size: 20px;
+    }
+}

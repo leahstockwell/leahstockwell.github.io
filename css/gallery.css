@@ -1,0 +1,114 @@
+#portfolio {
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-auto-flow: dense; /* Ensure dense packing of grid items */
+}
+
+.gallery .artwork {
+    position: relative;
+    margin: 0px;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: filter 1s ease, transform 1s ease;;
+}
+
+.gallery a:hover img {
+    filter: blur(5px);
+    transform: scale(1.2);
+}
+
+.gallery .overlay {
+    position: absolute;   /* This position could be breaking the organization of the images in relation to the text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow to text */
+}
+
+.gallery .artwork:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-header {
+    display: block;
+    font-weight: 600;
+    color: #4e4e4e;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 4vw;
+    text-transform: uppercase;
+    opacity: 0.8;
+    transition: background-color 0.4s ease;
+}
+
+.portfolio-subheader {
+    font-size: 16pt;
+    color: #4e4e4e;
+    font-size: 2vw;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+}
+
+@media (min-width: 1080px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio-header {
+        padding: 14px 120px;
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #portfolio {
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        float: none;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}

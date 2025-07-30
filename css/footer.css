@@ -1,0 +1,32 @@
+footer {
+    background-color: #51625A;
+    color: #FFD750;
+    text-align: center;
+    padding: 20px 0;
+    min-height: 150px;
+    font-size: 1.75em;
+}
+
+#contact {
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+    gap: 10px;                  /* Adds space between the header and the image/email section */
+}
+
+#contact .contact-details {
+    display: flex;              /* Enable flexbox layout for image and email */
+    align-items: center;        /* Align items vertically center */
+    justify-content: center;    /* Center items horizontally */
+    gap: 50px;                  /* Optional: Adds space between the image and the text */
+    padding-bottom: 20px;
+}
+
+#contact img {
+    max-width: 150px;           /* Optional: Set a maximum width for the image */
+    height: auto;               /* Maintain the image's aspect ratio */
+}
+
+#contact p {
+    margin: 0;                  /* Remove default margin for paragraph */
+}

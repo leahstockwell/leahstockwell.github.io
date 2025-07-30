@@ -1,0 +1,82 @@
+/* I copied this css almost directly from the original website */
+
+.about-me {
+    background-color: #FFD750 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 50px 100px 50px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-me img{
+    width: 40%;
+    border-radius: 8%;
+    margin-right: 20px;
+}
+
+.about-me p{
+    text-align: left;
+    text-indent: -36px;
+    width: 50%;
+    font-size:14pt;
+    line-height: 1.5rem;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.about-me a{
+    display: block;
+    margin-top:30px;
+    text-decoration: none;
+    font-size:16pt;
+    padding-bottom: 50px;
+}
+
+.about-title {
+    font-size: 20pt;
+    color: #000000;
+    position: relative;
+    margin-left: 50px;
+    padding-top: 50px;
+  }
+
+@media (max-width: 786px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Center items horizontally */
+        padding: 20px;        /* Adjust padding as needed */
+        margin: 0;            /* Remove any additional margins */
+    }
+
+    .about-content {
+        display: block;       /* Stack image and text vertically */
+        text-align: center;   /* Center text below the image */
+    }
+
+    .about-me img {
+        width: 80%;           /* Increase image width for smaller screens */
+        margin: 0 0 20px 0;   /* Remove right margin and add bottom margin */
+    }
+
+    .about-me p {
+        width: 100%;          /* Make text width 100% of the container */
+        text-align: justify;  /* Justify text alignment */
+        margin: 0;            /* Reset margins */
+        font-size: 16px;      /* Adjust font size for readability on small screens */
+        text-indent: 0px;
+    }
+
+    .about-me a {
+        font-size: 18px;      /* Adjust font size for links */
+    }
+}
